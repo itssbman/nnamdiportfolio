@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initRoleSwitcher();
   initPartsShelf();
   initEmailCopy();
+  initContactForm();
   initKeyboardShortcuts();
 });
 
@@ -350,6 +351,61 @@ function initKeyboardShortcuts() {
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
+    }
+  });
+}
+
+/* ==========================================================================
+   5. INTERACTIVE MESSAGE DISPATCH FORM
+   ========================================================================== */
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  const feedback = document.getElementById("form-feedback");
+  if (!form || !feedback) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    const botcheck = form.botcheck ? form.botcheck.checked : false;
+
+    if (!name || !email || !message) {
+      feedback.textContent = "Please fill in all fields.";
+      feedback.className = "form-feedback error";
+      return;
+    }
+
+    feedback.textContent = "Transmitting message...";
+    feedback.className = "form-feedback";
+
+    // If served locally on file:// protocol, redirect to mailto
+    if (window.location.protocol === "file:") {
+      window.location.href = `mailto:nnamdis.space@gmail.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
+      feedback.textContent = "Opening your mail client...";
+      feedback.className = "form-feedback success";
+      form.reset();
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message, botcheck })
+      });
+      const data = await res.json();
+      if (res.ok && data.success !== false) {
+        feedback.textContent = "✓ Transmission received. I will reply shortly.";
+        feedback.className = "form-feedback success";
+        form.reset();
+      } else {
+        feedback.textContent = data.message || "Transmission error. Please email nnamdis.space@gmail.com directly.";
+        feedback.className = "form-feedback error";
+      }
+    } catch (err) {
+      feedback.textContent = "Network error. Please email nnamdis.space@gmail.com directly.";
+      feedback.className = "form-feedback error";
     }
   });
 }

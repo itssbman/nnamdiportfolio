@@ -531,6 +531,30 @@
             <p class="tb-body">
               Open to freelance projects, engineering contracts, and junior roles. I work remotely (GMT+1) and take full accountability from the first wireframe to production CI/CD.
             </p>
+
+            <!-- Interactive Message Dispatch Form -->
+            <form id="contact-form" class="dispatch-form" novalidate>
+              <input type="checkbox" name="botcheck" class="hidden-field" style="display:none;" tabindex="-1" autocomplete="off">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">NAME // IDENTIFIER</label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Vance" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">EMAIL // RETURN ROUTE</label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-message">TRANSMISSION // PROJECT BRIEF</label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Describe the product, timeline, or engineering role..." required></textarea>
+              </div>
+              <button type="submit" class="btn-dispatch">
+                <span>Dispatch Transmission</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 12.5L12.5 1.5M12.5 1.5H4M12.5 1.5V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
           </div>
           
           <div class="tb-col tb-dispatch">
