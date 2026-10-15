@@ -271,7 +271,7 @@ const partsCatalog = {
     links: [
       { label: "Open contact gateway", url: "https://contactnnamdi.vercel.app/", primary: true }
     ],
-    metric: "100% SPAM-SCREENED TRANSMISSION",
+    metric: "100% SPAM-SCREENED ROUTING",
     svgContent: `
       <!-- Form Gateway Pipeline CAD -->
       <rect x="60" y="45" width="130" height="130" stroke="#B7B5AC" stroke-width="1.2" fill="none"/>
@@ -458,7 +458,7 @@ function initContactForm() {
       return;
     }
 
-    feedback.textContent = "Transmitting message...";
+    feedback.textContent = "Sending message...";
     feedback.className = "form-feedback";
 
     // If served locally on file:// protocol, redirect to mailto
@@ -478,11 +478,11 @@ function initContactForm() {
       });
       const data = await res.json();
       if (res.ok && data.success !== false) {
-        feedback.textContent = "✓ Transmission received. I will reply shortly.";
+        feedback.textContent = "✓ Message sent. I will reply shortly.";
         feedback.className = "form-feedback success";
         form.reset();
       } else {
-        feedback.textContent = data.message || "Transmission error. Please email nnamdis.space@gmail.com directly.";
+        feedback.textContent = data.message || "Could not send message. Please email nnamdis.space@gmail.com directly.";
         feedback.className = "form-feedback error";
       }
     } catch (err) {
