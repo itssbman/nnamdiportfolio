@@ -130,6 +130,88 @@ const partsCatalog = {
   },
   "p-003": {
     partNo: "DETAIL · P-003",
+    status: "PRODUCTION / HYBRID STUDIO",
+    category: "STUDIO / FULL-STACK",
+    title: "TechLearningHub — Software Studio & Tech Academy",
+    desc: "TechLearningHub is a software studio and tech academy in one place. We build digital products for businesses, and we train the next generation of engineers to build them too. Our team ships real projects, then teaches what we learn in live, cohort-based programmes. We work in two-week sprints with live demos, so clients see progress early and often. Every project follows four stages: discovery, design and prototype, build and ship, then scale and support.",
+    tags: ["Software Studio", "Academy / LMS", "Cohort Engine", "Two-Week Sprints", "Next.js / React", "Full-Stack", "Vercel"],
+    links: [
+      { label: "Open Studio & Academy", url: "https://learninghub-peach.vercel.app/", primary: true }
+    ],
+    metric: "4-STAGE DELIVERY PIPELINE // 2-WEEK SPRINTS",
+    svgContent: `
+      <!-- Dual Studio & Academy CAD Pipeline -->
+      <rect x="50" y="30" width="160" height="70" stroke="#B7B5AC" stroke-width="1.2" fill="none"/>
+      <rect x="58" y="38" width="55" height="12" fill="#E65B32"/>
+      <text x="63" y="47" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">STUDIO</text>
+      <text x="58" y="72" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">4-STAGE SPRINT ENGINE</text>
+      <text x="58" y="86" fill="#8E9189" font-family="'JetBrains Mono', monospace" font-size="7">DISCOVERY → PROTOTYPE → SHIP</text>
+      
+      <rect x="250" y="30" width="160" height="70" stroke="#B7B5AC" stroke-width="1.2" fill="none"/>
+      <rect x="258" y="38" width="65" height="12" fill="#20211F" stroke="#B7B5AC" stroke-width="1"/>
+      <text x="263" y="47" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">ACADEMY</text>
+      <text x="258" y="72" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">LIVE COHORT PLATFORM</text>
+      <text x="258" y="86" fill="#8E9189" font-family="'JetBrains Mono', monospace" font-size="7">INTERACTIVE CURRICULUM</text>
+      
+      <!-- Bridge / Feedback Loop -->
+      <path d="M 210 65 L 250 65" stroke="#E65B32" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <polygon points="248,62 254,65 248,68" fill="#E65B32"/>
+      
+      <!-- Lower Process Milestones -->
+      <rect x="50" y="130" width="80" height="45" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+      <text x="58" y="152" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">01. DISCOVER</text>
+      <rect x="140" y="130" width="80" height="45" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+      <text x="148" y="152" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">02. PROTOTYPE</text>
+      <rect x="230" y="130" width="80" height="45" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+      <text x="238" y="152" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">03. SHIP</text>
+      <rect x="320" y="130" width="90" height="45" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+      <text x="328" y="152" fill="#E65B32" font-family="'JetBrains Mono', monospace" font-size="8">04. SCALE</text>
+    `
+  },
+  "p-004": {
+    partNo: "DETAIL · P-004",
+    status: "PRODUCTION ECOSYSTEM",
+    category: "CREATOR PLATFORM",
+    title: "Africa Creators — Education & Monetization Suite",
+    desc: "An end-to-end platform built for African digital creators, educators, and communities. Powers course creation & interactive video hosting, social feeds & gamified discussion threads, native multi-tier affiliate & ambassador management, tiered subscription memberships, and agency-level CRM marketing operations.",
+    tags: ["Course Creation", "Community Feeds", "Affiliate Engine", "Tiered Memberships", "Marketing Funnels", "Vercel"],
+    links: [
+      { label: "Open Live Platform", url: "https://africa-creators.vercel.app/", primary: true }
+    ],
+    metric: "5-MODULE ECOSYSTEM // CRM & MONETIZATION",
+    svgContent: `
+      <!-- Africa Creators 5-Node Hub CAD -->
+      <circle cx="230" cy="100" r="32" stroke="#E65B32" stroke-width="1.8" fill="#20211F"/>
+      <text x="195" y="103" fill="#E65B32" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">AFRICA CREATORS</text>
+      
+      <!-- Node 1: Courses -->
+      <rect x="40" y="30" width="95" height="35" stroke="#B7B5AC" stroke-width="1" fill="none"/>
+      <text x="48" y="52" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">COURSES & VIDEO</text>
+      <line x1="135" y1="48" x2="202" y2="85" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2"/>
+      
+      <!-- Node 2: Community -->
+      <rect x="325" y="30" width="95" height="35" stroke="#B7B5AC" stroke-width="1" fill="none"/>
+      <text x="333" y="52" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">COMMUNITY FEED</text>
+      <line x1="325" y1="48" x2="258" y2="85" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2"/>
+      
+      <!-- Node 3: Affiliate -->
+      <rect x="40" y="145" width="95" height="35" stroke="#B7B5AC" stroke-width="1" fill="none"/>
+      <text x="46" y="167" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">AFFILIATE ENGINE</text>
+      <line x1="135" y1="162" x2="204" y2="118" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2"/>
+      
+      <!-- Node 4: Memberships -->
+      <rect x="325" y="145" width="95" height="35" stroke="#B7B5AC" stroke-width="1" fill="none"/>
+      <text x="331" y="167" fill="#B7B5AC" font-family="'JetBrains Mono', monospace" font-size="8">PAID MEMBERSHIP</text>
+      <line x1="325" y1="162" x2="256" y2="118" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2"/>
+      
+      <!-- Node 5: Funnels -->
+      <rect x="180" y="170" width="100" height="28" stroke="#E65B32" stroke-width="1" fill="none"/>
+      <text x="188" y="188" fill="#E65B32" font-family="'JetBrains Mono', monospace" font-size="8">MARKETING CRM</text>
+      <line x1="230" y1="132" x2="230" y2="170" stroke="#E65B32" stroke-width="1" stroke-dasharray="2 2"/>
+    `
+  },
+  "p-005": {
+    partNo: "DETAIL · P-005",
     status: "CLIENT DEPLOYED (2 SITES)",
     category: "DESIGN ENG",
     title: "School Website Template System",
@@ -155,8 +237,8 @@ const partsCatalog = {
       <text x="12" y="115" fill="#E65B32" font-family="'JetBrains Mono', monospace" font-size="8">100% RESP</text>
     `
   },
-  "p-004": {
-    partNo: "DETAIL · P-004",
+  "p-006": {
+    partNo: "DETAIL · P-006",
     status: "CLIENT APPROVED",
     category: "DESIGN ENG",
     title: "Stephanie's Portfolio",
@@ -179,8 +261,8 @@ const partsCatalog = {
       <rect x="290" y="130" width="85" height="45" stroke="#B7B5AC" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
     `
   },
-  "p-005": {
-    partNo: "DETAIL · P-005",
+  "p-007": {
+    partNo: "DETAIL · P-007",
     status: "ACTIVE UTILITY",
     category: "CORE UX",
     title: "Contact Gateway",
