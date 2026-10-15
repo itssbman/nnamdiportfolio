@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Eze Nnamdi — Design Engineer & Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Eze Nnamdi — Design Engineer, Web Developer, and AI Developer. Precision-built software engineered from first sketch to deployment.">
+  <title>Eze Nnamdi — Design Engineer</title>
+  <meta name="description" content="Eze Nnamdi — Design Engineer. Crafting precision design systems, accessible web applications, and AI-enabled software from first sketch to production code.">
   
-  <!-- Fonts: Bricolage Grotesque & Space Mono -->
+  <!-- High-Performance Asynchronous Font Loading (Sub-second LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  </noscript>
   
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,7 +34,7 @@
       <div class="topbar-right">
         <span class="status-indicator">
           <span class="status-dot"></span>
-          <span class="mono-meta">AVAILABLE FOR WORK (GMT+1)</span>
+          <span class="mono-meta">OPEN TO FREELANCE / JUNIOR ROLES (GMT+1)</span>
         </span>
         <span class="reg-crosshair">+</span>
       </div>
@@ -50,7 +54,10 @@
         <a href="#contact" class="nav-link"><span class="nav-idx">05</span>Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="#contact" class="btn-sm">Inquire</a>
+        <a href="#contact" class="btn-sm nav-hire-btn">
+          <span class="btn-main-text">Hire Me</span>
+          <span class="btn-subtext">INQUIRE</span>
+        </a>
       </div>
     </nav>
 
@@ -58,12 +65,16 @@
     <section id="hero" class="section-hero">
       <div class="hero-header-meta">
         <div class="meta-item">
-          <span class="label">DISCIPLINE</span>
-          <span class="val">DESIGN ENGINEERING // FULL-STACK</span>
+          <span class="label">LEAD ROLE</span>
+          <span class="val">DESIGN ENGINEER</span>
         </div>
         <div class="meta-item">
-          <span class="label">LOCATION</span>
-          <span class="val">LAGOS, NG (REMOTE WORLDWIDE)</span>
+          <span class="label">CORE CAPABILITIES</span>
+          <span class="val">DESIGN SYSTEMS // FULL-STACK REACT</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">AVAILABILITY</span>
+          <span class="val">OPEN TO FREELANCE & JUNIOR ROLES</span>
         </div>
         <div class="meta-item">
           <span class="label">SHEET</span>
@@ -74,8 +85,18 @@
       <div class="hero-main">
         <h1 class="hero-title">
           Eze Nnamdi <br>
-          <span class="hero-subline">builds the whole thing.</span>
+          <span class="hero-subline">Design Engineer.</span>
         </h1>
+        <p class="hero-positioning-subtext">
+          I bridge interface design and production software — shipping accessible design systems, responsive React web apps, and AI-assisted workflows directly in code.
+        </p>
+
+        <div class="hero-skill-pills">
+          <span class="skill-pill">Design Systems</span>
+          <span class="skill-pill">Full-Stack React</span>
+          <span class="skill-pill">AI Integrations</span>
+          <span class="skill-pill">Figma-to-Code</span>
+        </div>
 
         <!-- Industrial Role Switcher -->
         <div class="role-switcher-box">
@@ -104,14 +125,20 @@
 
         <div class="hero-actions">
           <a href="#shelf" class="btn-primary">
-            <span>Pull parts from shelf</span>
+            <div class="btn-label-group">
+              <span class="btn-main-text">View Projects</span>
+              <span class="btn-subtext">PULL FROM SHELF</span>
+            </div>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1V13M7 13L12 8M7 13L2 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a href="#contact" class="btn-secondary">
-            <span>Dispatch message</span>
+            <div class="btn-label-group">
+              <span class="btn-main-text">Hire Me</span>
+              <span class="btn-subtext">DISPATCH INQUIRY</span>
+            </div>
             <span class="btn-hotkey">M</span>
           </a>
-          <a href="https://github.com/itssbman" target="_blank" rel="noopener" class="btn-ghost">
+          <a href="https://github.com/itssbman" target="_blank" rel="noopener" class="btn-ghost" title="GitHub Profile">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
             <span>itssbman</span>
           </a>
@@ -189,7 +216,10 @@
             <div class="part-row active" data-id="p-001" data-cat="ai web design" tabindex="0">
               <span class="col-part"><span class="part-badge">P-001</span></span>
               <span class="col-name">
-                <strong>STED</strong>
+                <div class="part-name-row">
+                  <strong>STED</strong>
+                  <span class="origin-tag personal">Personal</span>
+                </div>
                 <span class="part-summary">AI study companion & academic finance engine</span>
               </span>
               <span class="col-cat">AI / FULL-STACK</span>
@@ -200,7 +230,10 @@
             <div class="part-row" data-id="p-002" data-cat="web design" tabindex="0">
               <span class="col-part"><span class="part-badge">P-002</span></span>
               <span class="col-name">
-                <strong>Kwik</strong>
+                <div class="part-name-row">
+                  <strong>Kwik</strong>
+                  <span class="origin-tag personal">Personal</span>
+                </div>
                 <span class="part-summary">Food delivery platform across four synchronized roles</span>
               </span>
               <span class="col-cat">SYSTEMS / WEB</span>
@@ -211,7 +244,10 @@
             <div class="part-row" data-id="p-003" data-cat="web design" tabindex="0">
               <span class="col-part"><span class="part-badge">P-003</span></span>
               <span class="col-name">
-                <strong>TechLearningHub</strong>
+                <div class="part-name-row">
+                  <strong>TechLearningHub</strong>
+                  <span class="origin-tag client">Client</span>
+                </div>
                 <span class="part-summary">Software studio & tech academy with live cohort delivery</span>
               </span>
               <span class="col-cat">STUDIO / WEB</span>
@@ -222,7 +258,10 @@
             <div class="part-row" data-id="p-004" data-cat="web design" tabindex="0">
               <span class="col-part"><span class="part-badge">P-004</span></span>
               <span class="col-name">
-                <strong>Africa Creators</strong>
+                <div class="part-name-row">
+                  <strong>Africa Creators</strong>
+                  <span class="origin-tag client">Client</span>
+                </div>
                 <span class="part-summary">Creator education, community, memberships & funnels</span>
               </span>
               <span class="col-cat">CREATOR PLATFORM</span>
@@ -233,7 +272,10 @@
             <div class="part-row" data-id="p-005" data-cat="design web" tabindex="0">
               <span class="col-part"><span class="part-badge">P-005</span></span>
               <span class="col-name">
-                <strong>School Template</strong>
+                <div class="part-name-row">
+                  <strong>School Template</strong>
+                  <span class="origin-tag client">Client</span>
+                </div>
                 <span class="part-summary">Reusable multi-campus education portal system</span>
               </span>
               <span class="col-cat">DESIGN ENG</span>
@@ -244,7 +286,10 @@
             <div class="part-row" data-id="p-006" data-cat="design web" tabindex="0">
               <span class="col-part"><span class="part-badge">P-006</span></span>
               <span class="col-name">
-                <strong>Stephanie</strong>
+                <div class="part-name-row">
+                  <strong>Stephanie</strong>
+                  <span class="origin-tag client">Client</span>
+                </div>
                 <span class="part-summary">Editorial client portfolio, identity & responsive build</span>
               </span>
               <span class="col-cat">DESIGN ENG</span>
@@ -255,7 +300,10 @@
             <div class="part-row" data-id="p-007" data-cat="design web" tabindex="0">
               <span class="col-part"><span class="part-badge">P-007</span></span>
               <span class="col-name">
-                <strong>Contact Gateway</strong>
+                <div class="part-name-row">
+                  <strong>Contact Gateway</strong>
+                  <span class="origin-tag personal">Personal</span>
+                </div>
                 <span class="part-summary">Sanitized contact routing interface for social profiles</span>
               </span>
               <span class="col-cat">CORE UX</span>
@@ -344,16 +392,51 @@
               </div>
             </div>
 
-            <!-- Detail Info / Specifications -->
+            <!-- Detail Info / Case Study Specifications -->
             <div class="bp-info">
-              <h3 class="bp-project-title" id="detail-title">STED — AI Study Companion</h3>
-              <p class="bp-project-desc" id="detail-desc">
-                A personal project for university students that brings AI study help, academic planning and personal finance into one app. The AI chat generates flashcards and quizzes and analyzes PDFs. A planner tracks streaks, an expense tracker handles money, and a rate-limited serverless API protects the backend. Designed and built solo, with auth, payments and push notifications.
-              </p>
+              <div class="bp-title-row">
+                <h3 class="bp-project-title" id="detail-title">STED — AI Study Companion</h3>
+                <span class="bp-origin-badge personal" id="detail-origin">PERSONAL PROJECT</span>
+              </div>
+
+              <!-- Structured Case Study Sections -->
+              <div class="case-study-breakdown">
+                <div class="case-block">
+                  <span class="case-label">PROBLEM</span>
+                  <p class="case-text" id="detail-problem">
+                    University students struggle to balance fragmented study tools, academic task schedules, and budgeting across separate disconnected apps.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">WHAT I BUILT</span>
+                  <p class="case-text" id="detail-built">
+                    An all-in-one AI study companion combining real-time LLM chat (flashcard & quiz generation, PDF document parsing) with an academic streak planner and expense tracker, backed by serverless rate-limiting, Firebase Auth, Paystack payments, and PWA capabilities.
+                  </p>
+                </div>
+
+                <div class="case-block">
+                  <span class="case-label">RESULT // METRIC</span>
+                  <p class="case-text" id="detail-result">
+                    Shipped to production; sub-400ms inference response via Groq LLaMA 3.3 70B, zero layout shift (CLS: 0.00), installed by university students.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screenshot Slot for UI captures (Expanded for P-007 and previews) -->
+              <div class="bp-viewport-slot" id="detail-viewport-slot" style="display: none;">
+                <div class="viewport-slot-header">
+                  <span class="mono-meta">INTERFACE CAPTURE // SCREENSHOT SLOT</span>
+                  <span class="slot-badge">LIVE UI VERIFIED</span>
+                </div>
+                <div class="viewport-slot-content" id="detail-viewport-content">
+                  <!-- Injected dynamically for projects with screenshots/UI capture -->
+                </div>
+              </div>
 
               <div class="bp-specs-grid">
                 <div class="bp-spec-unit">
-                  <span class="unit-label">BILL OF MATERIALS / TECH</span>
+                  <span class="unit-label">BILL OF MATERIALS / TECH (BOM)</span>
                   <div class="tag-list" id="detail-tags">
                     <span class="tag">React</span>
                     <span class="tag">Vite</span>
@@ -587,14 +670,6 @@
                 </button>
               </div>
 
-              <!-- Phone Call -->
-              <div class="contact-action-row">
-                <a href="tel:+2348132191508" class="action-anchor">
-                  <span class="action-type">PHONE</span>
-                  <span class="action-val">+234 813 219 1508</span>
-                </a>
-              </div>
-
               <!-- GitHub Profile -->
               <div class="contact-action-row">
                 <a href="https://github.com/itssbman" target="_blank" rel="noopener" class="action-anchor">
@@ -639,7 +714,7 @@
   </div>
 
   <!-- Notification Toast for Copy -->
-  <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard</div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">Email copied to clipboard</div>
 
   <script src="app.js"></script>
 </body>
