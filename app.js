@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
    ========================================================================== */
 const roleData = {
   design: {
-    code: "SPEC: DE-01 // FIGMA-TO-CODE",
-    text: "I design in Figma and ship it in code, so what you approve is what goes live. Clean layouts, accessible details, themes that just work."
+    code: "SPEC: UX-01 // FIGMA-TO-CODE",
+    text: "I design intuitive user experiences in Figma and ship them in code, so what you approve is what goes live. Clean user flows, accessible details, and responsive layouts."
   },
   web: {
     code: "SPEC: WD-02 // REACT & SERVERLESS",
@@ -242,7 +242,7 @@ const partsCatalog = {
   "p-005": {
     partNo: "DETAIL · P-005",
     status: "CLIENT DEPLOYED (2 SITES)",
-    category: "DESIGN ENG",
+    category: "UI/UX ENG",
     origin: "Client",
     originBadge: "CLIENT PROJECT",
     title: "School Website Template System",
@@ -277,7 +277,7 @@ const partsCatalog = {
   "p-006": {
     partNo: "DETAIL · P-006",
     status: "CLIENT APPROVED",
-    category: "DESIGN ENG",
+    category: "UI/UX ENG",
     origin: "Client",
     originBadge: "CLIENT PROJECT",
     title: "Stephanie's Portfolio",
@@ -510,7 +510,7 @@ function initPartsShelf() {
 function initEmailCopy() {
   const copyBtn = document.getElementById("copy-email-btn");
   const toast = document.getElementById("toast");
-  const email = "nnamdis.space@gmail.com";
+  const email = "nnabrianeze@gmail.com";
 
   if (!copyBtn || !toast) return;
 
@@ -584,7 +584,7 @@ function initContactForm() {
 
     // If served locally on file:// protocol, redirect to mailto
     if (window.location.protocol === "file:") {
-      window.location.href = `mailto:nnamdis.space@gmail.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
+      window.location.href = `mailto:nnabrianeze@gmail.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
       feedback.textContent = "Opening your mail client...";
       feedback.className = "form-feedback success";
       form.reset();
@@ -603,11 +603,11 @@ function initContactForm() {
         feedback.className = "form-feedback success";
         form.reset();
       } else {
-        feedback.textContent = data.message || "Could not send message. Please email nnamdis.space@gmail.com directly.";
+        feedback.textContent = data.message || "Could not send message. Please email nnabrianeze@gmail.com directly.";
         feedback.className = "form-feedback error";
       }
     } catch (err) {
-      feedback.textContent = "Network error. Please email nnamdis.space@gmail.com directly.";
+      feedback.textContent = "Network error. Please email nnabrianeze@gmail.com directly.";
       feedback.className = "form-feedback error";
     }
   });
